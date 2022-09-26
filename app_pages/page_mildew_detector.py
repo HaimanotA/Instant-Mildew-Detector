@@ -10,7 +10,7 @@ from src.machine_learning.predictive_analysis import (
                                                     plot_predictions_probabilities
                                                     )
 
-def page_malaria_detector_body():
+def page_mildew_detector_body():
     st.info(
         f"* The client is interested to tell whether a given cell contains malaria parasite "
         f"or not."
