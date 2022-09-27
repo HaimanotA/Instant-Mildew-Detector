@@ -1,7 +1,19 @@
+## Instant Mildew Detector
+
+* Instant Mildew Detector is a Predictive Analytics app which detects and predicts if the cherry leaves  have powdery mildew or not. 
+
+
+## Infrastructures and Tools Used
+
+* Python as a development environment 
+* Gitpod and Jupyter notebook  as a cloud IDE editors and source control 
+* Streamlit for dashboarding
+* Heroku for cloud hosting
+
+
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We created then a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 * The dataset contains +4 thousand images taken from client's crop fields. The images show cherry leaves that are healthy and cherry leaves that contain powdery mildew, which is a fungal disease that affects a wide range of plants. The cherry plantation crop is one of their finest products in the portfolio and the company is concerned about supplying the market with a product of compromised quality.
-
 
 
 ## Business Requirements
@@ -27,6 +39,30 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 
 ## Dashboard Design
+
+This application has five main sections. These sections are
+
+* A Quick Project Summary page
+    This page shows the project dataset summary and the client's requirements.
+* A Cells Visualizer page
+     This page shows the listing of the findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+* Mildew Detector page
+     This page contains 
+      *** a link to download a set of cherry leaf images for live prediction (you may use the Kaggle repository that was provided to you).
+      *** a User Interface with a file uploader widget. The user should have the capacity to upload multiple images. For each image, it will display the image and a prediction statement, indicating if a cherry leaf is healthy or contains powdery mildew and the probability associated with this statement.
+      *** A table with the image name and prediction results, and a download button to download the table.
+
+* project hypothesis page
+     This page shows the project hypothesis and how it is validated across the project.
+
+* Model performance page
+     This is a technical page which displays the model performance.
+
+
+
+
+
+* The end product has 5 pages
 * List all dashboard pages and its content, either block of information or widgets, like: buttons, checkbox, image, or any other item that your dashboard library supports.
 * Eventually, during the project development, you may revisit your dashboard plan to update a give feature (for example, in the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type).
 
