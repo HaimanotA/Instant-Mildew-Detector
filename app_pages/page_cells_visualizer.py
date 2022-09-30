@@ -1,3 +1,14 @@
+import streamlit as st
+import os
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from matplotlib.image import imread
+
+import itertools
+import random
+
 def page_cells_visualizer_body():
     st.write("### Cells Visualizer")
     st.info(
@@ -7,8 +18,8 @@ def page_cells_visualizer_body():
     version = 'v1'
     if st.checkbox("Difference between average and variability image"):
       
-      avg_parasitized = plt.imread(f"outputs/{version}/avg_var_Parasitized.png")
-      avg_uninfected = plt.imread(f"outputs/{version}/avg_var_Uninfected.png")
+      avg_parasitized = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
+      avg_uninfected = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
       st.warning(
         f"* We notice the average and variability images didn't show "
@@ -29,7 +40,7 @@ def page_cells_visualizer_body():
 
     if st.checkbox("Image Montage"): 
       st.write("* To refresh the montage, click on 'Create Montage' button")
-      my_data_dir = 'inputs/malaria_dataset/cell_images'
+      my_data_dir = 'inputs/cherry_leaves/cherry-leaves'
       labels = os.listdir(my_data_dir+ '/validation')
       label_to_display = st.selectbox(label="Select label", options=labels, index=0)
       if st.button("Create Montage"):      
