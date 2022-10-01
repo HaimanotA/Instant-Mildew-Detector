@@ -1,6 +1,6 @@
 ## Instant Mildew Detector
 
-* Instant Mildew Detector is a Predictive Analytics app which detects and predicts if the cherry leaves  have powdery mildew or not. 
+* Instant Mildew Detector is a Predictive Analytics app which detects and predicts if a cherry leaves that are healthy and that contains powdery mildew. 
 
 
 ## Infrastructures and Tools Used
@@ -84,7 +84,15 @@ This application has five main sections. These sections are
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide example(s) on how you used these libraries.
+* Numpy==1.19.2
+* Pandas==1.1.2
+* Matplotlib==3.3.1
+* Seaborn==0.11.0
+* Plotly==4.12.0
+* Streamlit==0.85.0
+* Scikit-learn==0.24.2
+* tensorflow-cpu==2.6.0
+* keras==2.6.0
 
 
 ## Credits 
@@ -106,4 +114,4 @@ This application has five main sections. These sections are
 
 
 ## Acknowledgements (optional)
-* In case you would like to thank the people that provided support through this project.
+* 
