@@ -8,7 +8,7 @@ def page_summary_body():
 
     st.info(
         f"**General Information**\n"
-        f"* Malaria is a parasitic infection transmitted by the bite of infected female "
+        f"* Mildew is a form of fungus. It can grow on any organic matter and is caused by humidity and moisture "
         f"Anopheles mosquitoes.\n"
         f"* A blood smear sample is collected, mixed with a reagent and examined in "
         f"the microscope. Visual criteria are used to detect malaria parasites.\n"

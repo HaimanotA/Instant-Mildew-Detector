@@ -100,15 +100,18 @@ This application has five main sections. These sections are
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Numpy==1.19.2
-* Pandas==1.1.2
-* Matplotlib==3.3.1
-* Seaborn==0.11.0
-* Plotly==4.12.0
-* Streamlit==0.85.0
-* Scikit-learn==0.24.2
-* tensorflow-cpu==2.6.0
-* keras==2.6.0
+* Numpy
+* Pandas
+* Matplotlib
+* Seaborn
+* Plotly
+* Streamlit
+* Scikit-learn
+* tensorflow-cpu
+* keras
+* itertools
+* random
+
 
 
 ## Credits 

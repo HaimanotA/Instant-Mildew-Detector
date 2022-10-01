@@ -12,18 +12,18 @@ from src.machine_learning.predictive_analysis import (
 
 def page_mildew_detector_body():
     st.info(
-        f"* The client is interested to tell whether a given cell contains malaria parasite "
+        f"* The client is interested to tell whether a given cherry leaves contain mildew"
         f"or not."
         )
 
     st.write(
-        f"* You can download a set of parasitized and uninfected cells for live prediction. "
-        f"You can download the images from [here](https://www.kaggle.com/codeinstitute/cell-images-test)"
+        f"* You can download a set of leaves containing a powdery mildew or healthy leaves for live prediction. "
+        f"You can download the images from [here](https://www.kaggle.com/codeinstitute/cherry-leaves)"
         )
 
     st.write("---")
 
-    images_buffer = st.file_uploader('Upload blood smear samples. You may select more than one.',
+    images_buffer = st.file_uploader('Upload cherry leaves. You may select more than one.',
                                         type='png',accept_multiple_files=True)
    
     if images_buffer is not None:
@@ -31,7 +31,7 @@ def page_mildew_detector_body():
         for image in images_buffer:
 
             img_pil = (Image.open(image))
-            st.info(f"Blood Smear Sample: **{image.name}**")
+            st.info(f"Cherry leaves Sample: **{image.name}**")
             img_array = np.array(img_pil)
             st.image(img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
 
