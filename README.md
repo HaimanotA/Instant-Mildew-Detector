@@ -49,46 +49,76 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 This application has five main sections. These sections are
 
-* A Quick Project Summary page
+* Quick Project Summary 
 
-This page shows the project dataset summary and the client's requirements.
+This page gives general information, the project dataset summary and the client's requirements.
 
 
 ![streamlit cover](documentation/project_summary.png)
 
     
-* A Cherry Leaf Visualizer page
+* Cherry Leaf Visualizer 
 
-     This page shows the listing of the findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
-
+This page shows data visualization on three aspects.  The user can select either of the three check boxes at a time.
 
 ![streamlit cover](documentation/cherry_leaf_visualizer.png)
+     
+     1. Difference between average and variability image
 
-* Mildew Detector page
+     The first check box visualizes the "mean" and "standard deviation" images for powdery mildew contained and healthy leaf. 
+
+![streamlit cover](documentation/avg_var.png)
+
+![streamlit cover](documentation/avg_var2.png)
+
+     2. The difference between average powdery mildew and healthy leaves.
+
+     This checkbox displays an example of an average leaf containing powdery mildew, an average healthy leaf and a different image. 
+
+![streamlit cover](documentation/avg_var3.png)
+
+
+     3. An image montage for powdery mildew or healthy leaves.
+
+     In the image montage check box the user is expected to choose a label between healthy or powdery mildew to create a montage of random pre labelled images. every time we click the image montage button it generates a new montage of random images. 
+
+![streamlit cover](documentation/healthy_montage.png)
+
+
+![streamlit cover](documentation/mildew_montage.png)
+
+* Mildew Detection
 
      This page contains 
 
-      *** a link to download a set of cherry leaf images for live prediction (you may use the Kaggle repository that was provided to you).
+      * a link to download a set of cherry leaf images for live prediction (you may use the Kaggle repository that was provided to you).
 
+listing of the findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew
 
-![streamlit cover](documentation/cherry_leaf_visualizer.png)
+![streamlit cover](documentation/mild_detn.png)
 
       *** a User Interface with a file uploader widget. The user should have the capacity to upload multiple images. For each image, it will display the image and a prediction statement, indicating if a cherry leaf is healthy or contains powdery mildew and the probability associated with this statement.
       *** A table with the image name and prediction results, and a download button to download the table.
 
-* project hypothesis page
+* project Hypothesis 
+
      This page shows the project hypothesis and how it is validated across the project.
 
-* Model performance page
+![streamlit cover](documentation/hypoth_valdn.png)
+
+
+* Model performance Metrics
+
      This is a technical page which displays the model performance.
 
 
+![streamlit cover](documentation/train,valdn,test.png)
 
 
+![streamlit cover](documentation/Model-history.png)
 
-* The end product has 5 pages
-* List all dashboard pages and its content, either block of information or widgets, like: buttons, checkbox, image, or any other item that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a give feature (for example, in the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type).
+
+![streamlit cover](documentation/perfm_test.png)
 
 
 ## Unfixed Bugs
