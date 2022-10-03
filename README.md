@@ -1,15 +1,6 @@
-## Instant Mildew Detector
+# Instant Mildew Detector
 
-* Instant Mildew Detector is a Predictive Analytics app which detects and predicts if a cherry leaves that are healthy and that contains powdery mildew. 
-
-
-## Infrastructures and Tools Used
-
-* Python as a development environment 
-* Gitpod and Jupyter notebook  as a cloud IDE editors and source control 
-* Streamlit for dashboarding
-* Heroku for cloud hosting
-
+* Instant Mildew Detector is a Predictive Analytics app that detects and predicts if cherry leaves are healthy or if they contain powdery mildew. The app is designed using the classificatiion model in machine learning. 
 
 ## Dataset Content
 
@@ -59,12 +50,29 @@ To save time in this process, the IT team suggested an ML system that is capable
 This application has five main sections. These sections are
 
 * A Quick Project Summary page
-    This page shows the project dataset summary and the client's requirements.
-* A Cells Visualizer page
+
+This page shows the project dataset summary and the client's requirements.
+
+
+![streamlit cover](documentation/project_summary.png)
+
+    
+* A Cherry Leaf Visualizer page
+
      This page shows the listing of the findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+
+
+![streamlit cover](documentation/cherry_leaf_visualizer.png)
+
 * Mildew Detector page
+
      This page contains 
+
       *** a link to download a set of cherry leaf images for live prediction (you may use the Kaggle repository that was provided to you).
+
+
+![streamlit cover](documentation/cherry_leaf_visualizer.png)
+
       *** a User Interface with a file uploader widget. The user should have the capacity to upload multiple images. For each image, it will display the image and a prediction statement, indicating if a cherry leaf is healthy or contains powdery mildew and the probability associated with this statement.
       *** A table with the image name and prediction results, and a download button to download the table.
 

@@ -13,7 +13,7 @@ def page_leaves_visualizer_body():
     st.write("### Cherry Leaf Visualizer")
     st.info(
         f"* The client is interested in having a study to visually differentiate "
-        f"a cherry leaf that is healthy and that contains powdery mildew.")
+        f"a healthy and powdery mildew cherry leaf.")
     
     version = 'v1'
     if st.checkbox("Difference between average and variability image"):
