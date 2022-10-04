@@ -41,12 +41,6 @@ To save time in this process, the IT team suggested an ML system that is capable
 * An Image Montage shows that typically powdery mildew leaves have fine white marks across. Average Image, Variability Image, and Difference between Averages studies didn't reveal any clear pattern to differentiate one from another
 
 
-## ML Business Case
-
-
-
-
-
 ## Dashboard Design
 
 This application has five main sections. These sections are
