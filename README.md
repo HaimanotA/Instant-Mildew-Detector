@@ -1,6 +1,7 @@
 # Instant Mildew Detector
 
-* Instant Mildew Detector is a Predictive Analytics app that detects and predicts if cherry leaves are healthy or if they contain powdery mildew. The app is designed using the classificatiion model in machine learning. 
+* Instant Mildew Detector is a Predictive Analytics app that detects and predicts if cherry leaves are healthy or if they contain powdery mildew. The input for this app is a cherry leaf image, and the output indicates whether the cherry leaf is healthy or has powdery mildew. The app assists clients in not supplying a compromised quality product to the market. 
+* Instant Mildew Detector is designed using the classification model in machine learning. Therefore, it suggests a binary classifier, indicating whether a particular cherry leaf is healthy or contains powdery mildew.
 
 ## Dataset Content
 
@@ -34,22 +35,24 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision to validate it (them).
 
+* We suspect powdery mildew leaves have clear marks/signs; typically, the leaves are light roughly-circular, powders-looking patches on young, susceptible leaves (light green expanding leaves) that can differentiate from healthy leaves.
 
-
-
+* An Image Montage shows that typically powdery mildew leaves have fine white marks across. Average Image, Variability Image, and Difference between Averages studies didn't reveal any clear pattern to differentiate one from another
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualized a ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+
+
+
 
 
 ## Dashboard Design
 
 This application has five main sections. These sections are
+ 
 
-* Quick Project Summary 
+**1. Quick Project Summary**
 
 This page gives general information, the project dataset summary and the client's requirements.
 
@@ -62,67 +65,111 @@ This page gives general information, the project dataset summary and the client'
 This page shows data visualization on three aspects.  The user can select either of the three check boxes at a time.
 
 ![streamlit cover](documentation/cherry_leaf_visualizer.png)
-     
-     1. Difference between average and variability image
 
-     The first check box visualizes the "mean" and "standard deviation" images for powdery mildew contained and healthy leaf. 
+     
+1. Difference between average and variability image
+
+The first check box visualizes the "mean" and "standard deviation" images for powdery mildew contained and healthy leaf. 
 
 ![streamlit cover](documentation/avg_var.png)
 
 ![streamlit cover](documentation/avg_var2.png)
 
-     2. The difference between average powdery mildew and healthy leaves.
 
-     This checkbox displays an example of an average leaf containing powdery mildew, an average healthy leaf and a different image. 
+ 2. The difference between average powdery mildew and healthy leaves.
+
+This checkbox displays an example of an average leaf containing powdery mildew, an average healthy leaf and a different image. 
 
 ![streamlit cover](documentation/avg_var3.png)
 
 
-     3. An image montage for powdery mildew or healthy leaves.
+3. An image montage for powdery mildew or healthy leaves.
 
-     In the image montage check box the user is expected to choose a label between healthy or powdery mildew to create a montage of random pre labelled images. every time we click the image montage button it generates a new montage of random images. 
+ In the image montage check box the user is expected to choose a label between healthy or powdery mildew to create a montage of random pre labelled images. every time we click the image montage button it generates a new montage of random images. 
 
 ![streamlit cover](documentation/healthy_montage.png)
 
 
 ![streamlit cover](documentation/mildew_montage.png)
 
-* Mildew Detection
+**3. Mildew Detection**
 
-     This page contains 
+This page contains 
 
-      * a link to download a set of cherry leaf images for live prediction (you may use the Kaggle repository that was provided to you).
+* a link to download a set of cherry leaf images for live prediction (you may use the Kaggle repository that was provided to you).
 
-listing of the findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew
+* listing of the findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew
 
 ![streamlit cover](documentation/mild_detn.png)
 
-      *** a User Interface with a file uploader widget. The user should have the capacity to upload multiple images. For each image, it will display the image and a prediction statement, indicating if a cherry leaf is healthy or contains powdery mildew and the probability associated with this statement.
-      *** A table with the image name and prediction results, and a download button to download the table.
+* User Interface with a file uploader widget. The user should have the capacity to upload multiple images. For each image, it will display the image and a prediction statement, indicating if a cherry leaf is healthy or contains powdery mildew and the probability associated with this statement.
+* A table with the image name and prediction results, and a download button to download the table.
 
-* project Hypothesis 
+If the user upload or drag and insert an image of a leaf with mildew, the prediction will look as follows. 
 
-     This page shows the project hypothesis and how it is validated across the project.
+![streamlit cover](documentation/mildew.png)
+
+
+![streamlit cover](documentation/mild-test.png)
+
+If the user upload or drag and insert an image of a healthy leaf, the prediction will look as follows. 
+
+![streamlit cover](documentation/healthy.png)
+
+![streamlit cover](documentation/healthy-test.png)
+
+**4. Project Hypothesis** 
+
+This page shows the project hypothesis and how it is validated across the project.
 
 ![streamlit cover](documentation/hypoth_valdn.png)
 
 
-* Model performance Metrics
+ **5. Model performance Metrics**
 
-     This is a technical page which displays the model performance.
+This is a technical page which displays the model performance and it contains three plots.
+
+
+   1. Train, Validation and Test Set: Labels Frequencies
 
 
 ![streamlit cover](documentation/train,valdn,test.png)
+
+Out of the total 4208 datasets, 
+ * The train set ratio is 0.7.
+    * train - healthy: 1472 images. 
+    * train - powdery_mildew: 1472 images
+ * The validation set ratio is 0.1.
+    * validation - healthy: 210 images
+    * validation - powdery_mildew: 210 images
+ * The test set ratio is 0.2. 
+    * test - healthy: 422 images
+    * test - powdery_mildew: 422 images
+
+
+
+2. Model History
 
 
 ![streamlit cover](documentation/Model-history.png)
 
 
+
+3. Generalised Performance on Test Set
+
 ![streamlit cover](documentation/perfm_test.png)
+
+The agreed degree of accuracy criteria for the performance goal of the predictions with the client 
+is a degree of 97% accuracy. The generalized performance on the Test set for the 'Instant Mildew Detector' app is 98%. 
+
 
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+
+* There are no unfixed bugs in this project.
+* Shortcomings of the frameworks:- The plot generated in Model History regarding the Model accuracy and Model losses, both stories seem to be overfitted. This could be because I was supposed to train the data with more data sets.
+
+
 
 ## Deployment
 ### Heroku
@@ -138,37 +185,32 @@ listing of the findings related to a study to visually differentiate a cherry le
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Numpy
-* Pandas
-* Matplotlib
-* Seaborn
-* Plotly
-* Streamlit
-* Scikit-learn
-* tensorflow-cpu
-* keras
-* itertools
-* random
+
+* Numpy is used to handle multi-dimensional arrays and includes a wide set of mathematical functions to operate on these arrays. 
+* Pandas is used for data analysis including performing statstical analysis. 
+* Matplotlib is used for data visualization and helps in embedding plotts in Jupyter notebooks. 
+* Seaborn provides a high-level intetrface for statstiical graphics and it offers a built-in themes for styling Matplot graphics. 
+* Plotly is used for plotting data and and functions, add intteractivity and animation to data visualization. 
+* Scikit-learn contain tools for predictive analysis. allows to train machine learning models for classification and clustetring. 
+* tensorflow used to reduce the error in every iteration while fitting the model by using an optimiser and loss function.
+* keras provides the python interface for artificial neural networks. 
+* itertools used to iterate over data structures than can be sttepped over using a for-loop. 
+* random is used to generate random numbers. 
 
 
 
 ## Credits 
 
-* In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* This app is built by forking the template proven by Code Institute and the codes are 
+similar to the walkthrough project 1. 
+* The description for data Analysis and Machine Learning Libraries are taken from the CI lecture notes/videos. 
+
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The information regarding powdery mildew is taken from [Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew).
+
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-
-
-## Acknowledgements (optional)
-* 
+- The cherry leave images dataset are taken from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves).
