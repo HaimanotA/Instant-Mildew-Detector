@@ -1,3 +1,3 @@
 *.zip
-inputs/cherry_leaves_dataset/cherry-leaves/validation/healthy/*.JPG
+inputs/cherry_leaves/cherry-leaves/validation/healthy/*.JPG
 /documentation
