@@ -1,3 +1,1 @@
-*.zip
-inputs/cherry_leaves/cherry-leaves/validation/healthy/*.JPG
-/documentation
+*.zip/documentation
