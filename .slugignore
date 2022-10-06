@@ -1,4 +1,4 @@
 *.zip
 inputs/cherry_leaves_dataset/cherry-leaves/test/healthy/*.JPG
-/documentation/validation
-
+/documentation
+inputs/cherry_leaves_dataset/cherry-leaves/validation/healthy
